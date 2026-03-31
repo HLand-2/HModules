@@ -1,7 +1,7 @@
 # This is HL2's module list:
-1:  Budget manager
-2:  HMath
-3:  AI
+1.  Budget manager
+2.  HMath
+3.  AI
 
 # 🟢 NEON-TERMINAL PERSONAL AI (OLLAMA EDITION)
 
