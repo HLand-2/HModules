@@ -1,5 +1,4 @@
-This is HL2's module list:\n
-\n
-1: Budget manager,\n
-2: HMath,\n
+This is HL2's module list:
+1: Budget manager,
+2: HMath,
 3: AI
