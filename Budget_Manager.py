@@ -8,10 +8,19 @@ class BudgetManager:
 			raise ValueError("Budget exists")
 		if amount > self.availible:
 			raise ValueError("Insufficiet funds")
-		self.budjets[name] = amount
+		self.budgets[name] = amount
 		self.availible -= amount
 		self.expenditure[name] = 0
 		return self.availible
+	def change_budget(self, name, new_amount):
+		if name not in self.budgets:
+			raise ValueError("Budget does not exist")
+		old_amount = self.budgets[name]
+		if new_amount > old_amount + self.available:
+			raise ValueError("Insufficient funds")
+		self.budgets[name] = new_amount
+		self.available -= new_amount - old_amount
+		return self.available
 	def spend(self, name, amount):
 		if name not in self.expenditure:
 			raise ValueError("No such budget")
