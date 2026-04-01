@@ -1,9 +1,3 @@
-# Module list
-This is HL2's module list:
-1.  Budget manager
-2.  HMath
-3.  AI
-
 # 🟢 NEON-TERMINAL PERSONAL AI (OLLAMA EDITION)
 
 An elite, encrypted personal assistant built in Python. Features auto-context switching, VPN kill-switch, and multi-layer encryption.
