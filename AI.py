@@ -7,17 +7,20 @@ from cryptography.fernet import Fernet
 init(autoreset=True)
 
 class AI:
-    def __init__(self, model="llama3"):
+    def __init__(self, *args, **kwargs):
         self.REAL_CODE = "1475963284521235789"
         self.EARNING_LIMIT = 50.0
         self.ATTEMPT_LIMIT = 3
-        self.model = model
+        self.model = "llama3"
         self.log_file = "ai_session_log.txt"
         self.master_key_file = "master.key"
         self.income_tracker = ".income_audit.csv"
         self.attempt_file = ".sys_fail_log"
         self.history, self.current_mode, self.override = [], "personal", False
         self.financial_actions = []
+        self.extra = {}
+        self.extra["args"] = args.copy()
+        self.extra["kwargs"] = kwargs
 
         self.modes = {
             "personal": "Witty, loyal friend.",
