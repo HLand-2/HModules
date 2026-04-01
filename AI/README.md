@@ -39,5 +39,8 @@ Type these directly into the `USER >` prompt:
 3. Launch: `python AI.py`.
 
 ## Versions
-1. File created
-2. File updated to `version v32`
+| File | Action | Version | Editor |
+| :--- | :--- | :--- | :--- |
+| `AI.py` | Created | a1.0 | AI |
+| `requirements.txt` | Created | a1.0 | AI |
+| `AI.py` | Edited | a2.0 | AI |
