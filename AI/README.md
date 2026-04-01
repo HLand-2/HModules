@@ -37,3 +37,7 @@ Type these directly into the `USER >` prompt:
 1. Install [Ollama](https://ollama.com) and run `ollama run llama3`.
 2. Install dependencies: `pip install -r requirements.txt`.
 3. Launch: `python AI.py`.
+
+## Versions
+1. File created
+2. File updated to `version v32`
