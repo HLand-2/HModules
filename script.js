@@ -18,3 +18,25 @@ function toggleSecurity() {
     status.innerText = status.innerText === "ENCRYPTED" ? "DECRYPTED" : "ENCRYPTED";
     status.style.color = status.innerText === "ENCRYPTED" ? "#00ffcc" : "#ff00ff";
 }
+function triggerPooPoo() {
+    const body = document.body;
+    const cards = document.querySelectorAll('.card');
+    const symbols = "§±!@£$%^&*()_+=-¡€#¢∞§¶•ªº–≠⁄™‹›ﬁﬂ‡°·‚—±";
+    const pooWords = ["LooLoo", "PooPoo", "ShooShoo", "WeeWee", "Flush!"];
+
+    body.classList.toggle('poopoo-mode');
+
+    cards.forEach((card, i) => {
+        if (body.classList.contains('poopoo-mode')) {
+            // Pick a random poo word and mix in symbols
+            let randomWord = pooWords[Math.floor(Math.random() * pooWords.length)];
+            let glitch = symbols[Math.floor(Math.random() * symbols.length)];
+            card.innerHTML = `<h3>${glitch} ${randomWord} ${glitch}</h3><p>ERROR: SYSTEM STINKY</p>`;
+        } else {
+            // Restore original text
+            card.innerHTML = `<h3>[${i + 1}] ${modules[i]}</h3><p>System Node Operational</p>`;
+        }
+    });
+
+    console.log("💩 POO-POO PROTOCOL ACTIVATED 💩");
+}
