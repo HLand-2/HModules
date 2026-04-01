@@ -125,9 +125,12 @@ class AI:
                     budget_manager.add_budget(name, amt)
                     self.check_48h_limit(amt)
                     continue
+                elif "change" in inp.lower()and amt:
+                    name = inp.lower().replace("change", "").replace(str(amt), "").strip()
+                    budget_manager.change_budget(name, amt)
                 elif "spend" in inp.lower() and amt:
                     name = inp.lower().replace("spend", "").replace(str(amt), "").strip()
-                    budget_manager.spend_budget(name, amt)
+                    budget_manager.spend(name, amt)
                     continue
                 elif "summary" in inp.lower():
                     budget_manager.print_summary()
