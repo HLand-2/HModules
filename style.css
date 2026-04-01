@@ -44,3 +44,18 @@ button {
     cursor: pointer;
     font-weight: bold;
 }
+.poopoo-mode {
+    background-color: #3e2723 !important; /* Brown background */
+    color: #ffeb3b !important; /* Yellow text */
+    font-family: 'Comic Sans MS', cursive !important;
+}
+
+.poopoo-mode .card {
+    border: 5px dashed #795548 !important;
+    transform: rotate(2deg);
+}
+
+.glitch-btn {
+    background: #ff0000;
+    margin-left: 10px;
+}
