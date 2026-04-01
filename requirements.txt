@@ -3,3 +3,8 @@ colorama
 cryptography
 psutil
 pandas
+numpy
+requests
+google-api-python-client
+matplotlib
+python-dotenv
