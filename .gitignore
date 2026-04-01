@@ -1,0 +1,18 @@
+# --- API KEYS & SECRETS (DO NOT UPLOAD) ---
+config.json
+.env
+secrets.py
+
+# --- PYTHON SYSTEM FILES ---
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.venv/
+env/
+
+# --- LOCAL DATA & LOGS ---
+session_log.txt
+*.csv
+*.json
+!config_template.json
