@@ -1,5 +1,6 @@
 import ollama, os, datetime, getpass, sys, time, psutil, threading, random, ctypes, re, io
 import pandas as pd
+import turtle as td
 from budget_manager import BudgetManager as budget_manager  # Your local module
 from colorama import init, Fore, Back, Style
 from cryptography.fernet import Fernet
