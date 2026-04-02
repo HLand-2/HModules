@@ -17,4 +17,4 @@ A professional-grade Python suite combining **Math**, **AI**, and **Live Data** 
 ## 📦 Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com
+   git clone https://github.com/HLand-2/HModules```
